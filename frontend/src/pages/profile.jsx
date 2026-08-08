@@ -44,7 +44,7 @@ function Profile() {
         { withCredentials: true }
       );
 
-      dispatch(setUserData(result.data.user)); // ✅ FIX
+      dispatch(setUserData(result.data.user));
       navigate("/");
     } catch (error) {
       console.log("Error updating profile:", error);
@@ -55,7 +55,6 @@ function Profile() {
 
   return (
     <div className='w-full h-[100vh] bg-[#0F172A] flex flex-col justify-center items-center'>
-
       <div
         className='fixed top-[20px] left-[20px] cursor-pointer'
         onClick={() => navigate("/")}
@@ -71,9 +70,11 @@ function Profile() {
         />
         <IoCameraOutline
           onClick={() => image.current.click()}
-          className='absolute bottom-4 right-4 w-[35px] h-[35px] text-white cursor-pointer'
+          className='absolute bottom-4 right-4 w-[35px] h-[35px] text-black cursor-pointer'
         />
+        
       </div>
+      
 
       <form
         className='w-[95%] h-[400px] max-w-[500px] flex flex-col gap-[40px] items-center justify-center'
@@ -116,6 +117,7 @@ function Profile() {
           {saving ? "Saving..." : "Save"}
         </button>
       </form>
+    
     </div>
   );
 }

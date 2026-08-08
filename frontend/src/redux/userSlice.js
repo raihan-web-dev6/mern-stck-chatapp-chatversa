@@ -14,7 +14,7 @@ const userSlice = createSlice({
   setUserData: (state, action) => {
     state.userData = action.payload;
   },
-  setOtherUsers: (state, action) => {   // ✅ fixed
+  setOtherUsers: (state, action) => {  
     state.otherUsers = action.payload;
   },
   setSelectedUser: (state, action) => {

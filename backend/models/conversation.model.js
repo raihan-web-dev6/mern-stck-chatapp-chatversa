@@ -18,4 +18,4 @@ const conversationschema = new mongoose.Schema({
 
 const Conversation = mongoose.model("Conversation", conversationschema);
 
-export default Conversation;
+export default Conversation; 

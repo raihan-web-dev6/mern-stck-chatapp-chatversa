@@ -1,13 +1,10 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-
-
 import Signup from './pages/signup';
 import Login from './pages/login';
 import Profile from './pages/profile';
 import Home from './pages/home';
-
 import getCurrentUser from './customHooks/getCurrentUser';
 import getOtherUsers from './customHooks/getotheruser';
 import { useEffect } from 'react';

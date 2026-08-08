@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const messageSlice = createSlice({
   name: "message",
   initialState: {
-    messages: [] // ✅ MUST be an array
+    messages: [] 
   },
   reducers: {
     setmessages: (state, action) => {
